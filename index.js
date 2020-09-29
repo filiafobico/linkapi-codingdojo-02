@@ -3,7 +3,7 @@ const Encryption = require('node_triple_des');
 const csv = require('csvtojson');
 const fs = require('fs');
 
-async function example() {
+async function encript() {
   const client = new ftp.Client()
   client.ftp.verbose = true
   try {
@@ -44,7 +44,7 @@ var CronJob = require('cron').CronJob;
 var job = new CronJob(
   '*/10 * * * * *',
   async function () {
-    await example();
+    await encript();
   },
   null,
   true,
